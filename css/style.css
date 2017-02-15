@@ -61,7 +61,7 @@ h2 {
 
 
 .container {
-  width: 100%;
+  width: 630px;
   margin: 100px auto;
   background: #FFF;
 }
@@ -69,5 +69,3 @@ h2 {
 .hero img {
     width:100%;
 }
-
-
