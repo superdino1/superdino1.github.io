@@ -3,27 +3,29 @@
   <title> a new project</title>
   <meta name="description" content="experience the first project">
   <link rel="stylesheet" href="css/control.css">
+  <script src="control.js"></script>
 </head>
 <body>
-  <div id="login">
-  <h1>Calcolo prezzo</h1>
-  <form name="main">
-    <input type="text" name="prezzo" id="prezzo" placeholder="Prezzo" />
-    <div align="center" class="center">
-      <input type="radio" name="r1" id="r1" />4
-      <input type="radio" name="r2" id="r2" />10
-      <input type="radio" name="r2" id="r3" />22
-    </div>
-    <input type="text" name="iva" id="iva" placeholder="Iva" />
-    </br>
-    </br>
-    <input type="text" name="prezzoTotIva" id="prezzoTotIva" placeholder="Prezzo con iva" readonly />
-    <input type="text" name="prezzoTot" id="prezzoTot" placeholder="Prezzo senza iva" readonly/>
-    <input type="button" value="Calcola" onclick="Calcola()" />
-    </br>
-    </br>
-    <input type="button" value="Reset" onclick="Reset()" />
-  </form>
-</div>
+    <section id="login">
+      <h1> 价格计算（Calcoco prezzo)</h1>
+    <form name = "main"> /* get the input from the user */
+      <input type="text" name="prezzo" id="prezzo" placeholder="Prezzo"/>／*价格*／
+      /* 这个input是什么，是character, 然后你给他取得名字是什么，id is something you wiil
+will use later to use in the javascript. the placeholder is something will show up in the blank section*/
+      <div aligh="center" class="center">
+      <input type="radio" name="r1" id="r1"/>4
+      <input type="radio" name="r2" id="r2"/>10
+      <input type="radio" name="r3" id="r3"/>22
+    </div>/* this part will give you some clue about what the user input the data
+  </br>
+</br>
+<input type="text" name="prezzoTotIva" id="prezzoTotIva" placeholder="Prezzo con iva" readonly />／*(价格含税)with read only input*／
+<input type="text" name="prezzoTot" id="prezzoTot" placeholder="Prezzo senza iva" readonly/>／*（价格不含增值税）with read only input*／
+<input type="button" value="Calcola" onclick="Calcola()" />/*单位计算*/
+</br>
+</br>
+<input type="button" value="Reset" onclick="Reset()" />
+
+    </section>
 </body>
 </html>
