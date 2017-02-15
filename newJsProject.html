@@ -1,8 +1,29 @@
 <html>
 <head>
   <title> a new project</title>
+  <meta name="description" content="experience the first project">
+  <link rel="stylesheet" href="css/control.css">
 </head>
 <body>
-  <h1> I love code so much!</h1>
+  <div id="login">
+  <h1>Calcolo prezzo</h1>
+  <form name="main">
+    <input type="text" name="prezzo" id="prezzo" placeholder="Prezzo" />
+    <div align="center" class="center">
+      <input type="radio" name="r1" id="r1" />4
+      <input type="radio" name="r2" id="r2" />10
+      <input type="radio" name="r2" id="r3" />22
+    </div>
+    <input type="text" name="iva" id="iva" placeholder="Iva" />
+    </br>
+    </br>
+    <input type="text" name="prezzoTotIva" id="prezzoTotIva" placeholder="Prezzo con iva" readonly />
+    <input type="text" name="prezzoTot" id="prezzoTot" placeholder="Prezzo senza iva" readonly/>
+    <input type="button" value="Calcola" onclick="Calcola()" />
+    </br>
+    </br>
+    <input type="button" value="Reset" onclick="Reset()" />
+  </form>
+</div>
 </body>
 </html>
